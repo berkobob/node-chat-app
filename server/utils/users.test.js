@@ -56,7 +56,7 @@ describe("Users", () => {
 
     it("should not remove user", () => {
         var user = users.removeUser(4);
-        expect(user.length).toBe(0);
+        expect(user).toBeFalsy();
         expect(users.users.length).toBe(3);
     });
 
