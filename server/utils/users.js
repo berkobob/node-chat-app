@@ -14,11 +14,11 @@ class Users {
         if (user) {
             this.users = this.users.filter(user => user.id != id);
         }
-        return user[0];
+        return user;
     }
 
     getUser(id) {
-        return this.users.filter(user => user.id === id);
+        return this.users.filter(user => user.id === id)[0];
     }
 
     getUserList(room) {
